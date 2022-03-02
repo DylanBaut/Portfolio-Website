@@ -1,23 +1,138 @@
 <!DOCTYPE html>
+<!--
+    This is the first test html website while DJ is starting to learn HTML
+-->
 <html>
-    <head>
-        <meta charset= "UTF-8" >
-        <meta name="DJ's personal website, page 2" content="test website produced by DJ">
-        <title>DJ Bautista/About me</title>
-    </head>
-    <body style="background-color: blanchedalmond;">
-        <h1>
-            <b>About Me</b>
-        </h1>
-        <a href="index.html" style="color:brown">Return to home page</a>
 
-        <form>
-            <p>Please enter your contact information so I can contact you!</p>
-            <input type="text" value="your email"/>    
-            <input type="text" value="your name"/> 
-            <p>Please enter your what you're interested in contacting me for!</p>
-            <textarea rows="10" cols="50">I wish to speak to DJ about...</textarea>
-        </form>
-    </body>
+    <head>
     
+        <meta charset= "UTF-8" >
+        <meta name="description" content="DJ's Project Page">
+        <meta name="author" content="Dylan Jude Bautista">
+        <meta name="keywords" content= "Dylan, Bautista, Portfolio, DJ">
+        <meta name="newport" content="width=device width, initial scale=1.0">
+        <title>DJ Bautista</title>
+        <!--bootstrap stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Playfair Display font Import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        
+        <!--Lato font Import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan:wght@100&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+        <!--
+            <script src="script.js"></script>
+        -->
+        <style>
+            .opening-text{
+                color:rgb(188, 192, 196);
+                font-size: 2.8em;
+                font-family: 'Playfair Display', serif;
+                width: 40vw;
+                line-height: 140%;
+            }
+            p{
+                font-size: 18px;
+                font-family: 'Lato', serif;
+                color:rgb(30, 33, 37);
+                line-height: 250%;
+                text-align: center;
+            }
+            .header-image{
+                width:380px;
+                border-style: groove;
+                border-color: azure;
+                border-width: 5px;
+                border-radius: 5px;
+            }
+            .post-image{
+                width: 30vw;
+                height: 40vh;
+                border-style: ridge;
+            }
+            h1{
+                color: black;
+                font-size: 2em;
+                font-family: 'Playfair Display', serif;
+            }
+            h3{
+                color:black;
+                font-size: 3.5vh;
+                font-family: 'Playfair Display', serif;
+            }
+            .silver-sub{
+                background-color:rgb(228, 220, 220);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            footer{
+                background-color: white;
+                font-family: 'Playfair Display', serif;
+                line-height: 125%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .project-tab{
+                background-color: rgb(228, 220, 220);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40vh;
+            }
+        </style>
+
+    </head>    
+
+    <body style="background-color:whitesmoke";>
+        <!--Topbar-->
+        <div style= "padding: 4px; position:fixed; top:0px; left: 0px; width:100%; background-color: white;">
+            <h3>
+                  Dylan Jude Bautista
+            </h3>
+        </div>
+        <!--separator-->
+        <div style="height: 3vh; background-color:rgb(56, 56, 56);"></div>
+
+        <header style=" display:flex; align-items:center; justify-content: center; height: 18vh; background-color: rgb(56, 56, 56);">
+            <h1 class="opening-text" style="text-align: center;"> Work Experience </h1>
+        </header>
+       
+        <main>
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"><i>Demonstrations of my Skillset in the Real World</i></h1></div>
+
+            <div class="project-tab">
+                <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div>
+                    <h1>Intern at Picatinny Arsenal,<br>
+                        US Army CCDC</h1>
+                    <p>Integrated sensor data with Bluetooth interface using Python programming, alongside a colleague and mentor Mr. Gregory Hader. Provided weekly status updates and collaborated with Precision Armaments and Intelligent Sensors Division. Multifocused on a variety of possible applications such as sleep study, 
+                        flex sensor development, and personal projects. Encompassed concepts such as hardware expertise, microcontroller programming, and industry networking. For more information feel free to consult the presentation to the left.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
+
+        </main>
+
+        <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"></h1></div>
+
+        <footer>
+            <p style="flex-grow: 1; font-size: 20; font-family: 'Playfair Display', serif;">
+                Get in touch at <u>dylanjb5@illinois.edu</u><br>
+                LinkedIn profile: <a href="https://www.linkedin.com/in/dylan-bautista-a924a1210/" target="_blank">https://www.linkedin.com/in/dylan-bautista-a924a1210 </a><br>
+                Find me on Handshake as <u>Dylan Bautista</u>
+            </p>
+        </footer>
+
+        <!--bootstrap stuff-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
