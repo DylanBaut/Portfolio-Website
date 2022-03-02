@@ -12,7 +12,7 @@
         <meta name="keywords" content= "Dylan, Bautista, Portfolio, DJ">
         <meta name="newport" content="width=device width, initial scale=1.0">
         <title>DJ Bautista</title>
-        //bootstrap stuff
+        <!--bootstrap stuff-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
         <style>
             .opening-text{
                 color:rgb(188, 192, 196);
-                font-size:34 px;
+                font-size: 2.8em;
                 font-family: 'Playfair Display', serif;
                 width: 40vw;
                 line-height: 140%;
@@ -35,6 +35,7 @@
                 font-family: 'Playfair Display', serif;
                 color:rgb(30, 33, 37);
                 line-height: 250%;
+                text-align: center;
             }
             .header-image{
                 width:380px;
@@ -43,13 +44,23 @@
                 border-width: 5px;
                 border-radius: 5px;
             }
+            .post-image{
+                width: 30vw;
+                height: 40vh;
+                border-style: ridge;
+            }
+            h1{
+                color: black;
+                font-size: 2em;
+                font-family: 'Playfair Display', serif;
+            }
             h3{
                 color:black;
                 font-size: 3.5vh;
                 font-family: 'Playfair Display', serif;
             }
             .silver-sub{
-                background-color:rgb(228, 226, 226);
+                background-color:rgb(228, 220, 220);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -66,11 +77,11 @@
 
     </head>    
 
-    <body style="background-color:antiquewhite";>
+    <body style="background-color:whitesmoke";>
         <!--Topbar-->
-        <div style= "padding: 4px; position:fixed; top:0px; left: 0px; width:100%; background-color: whitesmoke;">
+        <div style= "padding: 4px; position:fixed; top:0px; left: 0px; width:100%; background-color: white;">
             <h3>
-                Dylan Jude Bautista
+                  Dylan Jude Bautista
             </h3>
         </div>
         <!--separator-->
@@ -93,19 +104,32 @@
                     innovative vigor through collaborative internships."
             </div>
 
-            <form>
-                <p>Please enter your contact information so I can contact you!</p>
-                <input type="text" value="your email"/>    
-                <input type="text" value="your name"/> 
-                <p>Please enter your what you're interested in contacting me for!</p>
-                <textarea rows="10" cols="50">I wish to speak to DJ about...</textarea>
-            </form>
+            <div style="background-color: white; margin-bottom: 0px; display: flex;justify-content: center;flex-direction: column; align-items: center;">
+                <h3 style="font-size: 2em; padding: 20px;"><b>Selected work</b></h3>
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items:flex-start;">
+                    <div style="padding:35px; margin-right: 70px">
+                        <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <h3 style="color:dimgray; text-align: center;">Computer Science Internship <br>at Picatinny Arsenal</h3>
+                        <p style="padding: 2%;">2020-2021</p>
+                        <div class="d-grid gap-2"><a class="btn btn-dark" role="button" href="project-page.html">Click Here to Learn More</a></div>
+                    </div>
+                    <div style="padding:35px; margin-left: 70px">
+                        <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="images/Ed4Equity.png" alt="Image of Education4Equity teaching chart">
+                        <h3 style="color:dimgray; text-align: center;">Programming Instruction for <br> Education4Equity</h3>
+                        <p style="padding: 2%;">2020-2021</p>
+                        <div class="d-grid gap-2"><a class="btn btn-dark" role="button" href="project-page.html">Click Here to Learn More</a></div>
+                    </div>
+                </div>
+            </div>
+
         </main>
+
+        <div class="silver-sub" style="height: 8vh;"></div>
 
         <footer>
             <p style="flex-grow: 1; font-size: 20;">
                 Get in touch at <u>dylanjb5@illinois.edu</u><br>
-                LinkedIn profile: <a href="https://www.linkedin.com/in/dylan-bautista-a924a1210/" target="_blank">https://www.linkedin.com/in/dylan-bautista-a924a1210/</a><br>
+                LinkedIn profile: <a href="https://www.linkedin.com/in/dylan-bautista-a924a1210/" target="_blank">https://www.linkedin.com/in/dylan-bautista-a924a1210 </a><br>
                 Find me on Handshake as <u>Dylan Bautista</u>
             </p>
         </footer>
