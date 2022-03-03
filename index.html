@@ -85,10 +85,21 @@
 
     <body style="background-color:whitesmoke";>
         <!--Topbar-->
-        <div style= "padding: 4px; position:fixed; top:0px; left: 0px; width:100%; background-color: white;">
+        <div style= "padding: 4px; position:fixed; top:0px; left: 0px; width:100%; background-color: white; display: flex;justify-content: space-between;">
             <h3>
                   Dylan Jude Bautista
             </h3>
+            <div class="dropdown" style="padding-right: 30px">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" style="width:25vw ;" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+                  <li><a class="dropdown-item" href="project-page.html">Project Page</a></li>
+                  <li><a class="dropdown-item" href="#">Contact Me</a></li>
+                </ul>
+              </div>
         </div>
         <!--separator-->
         <div style="height: 3vh; background-color:rgb(56, 56, 56);"></div>

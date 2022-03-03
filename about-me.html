@@ -107,6 +107,17 @@
                 width: 20vw;
                 height: 30vh;
             }
+            .caption{
+                font-size: 18px;
+                font-family: 'Lato', serif;
+                color:beige;
+                line-height: 250%;
+                text-align: center;
+                text-shadow: 2px 2px rgb(92, 84, 84);
+            }
+            h5{
+                font-family: 'Lato', serif;
+            }
         </style>
 
     </head>    
@@ -132,12 +143,58 @@
         <!--separator-->
         <div style="height: 3vh; background-color:rgb(56, 56, 56);"></div>
 
-        <header style=" display:flex; align-items:center; justify-content: center; height: 22vh; background-color: rgb(56, 56, 56);">
-            <h1 class="opening-text" style="text-align: center;"> Work Experience </h1>
+        <header style=" display:flex; align-items:center; justify-content: center; height: 22vh; background-color: rgb(56, 56, 56)">
+            <h1 class="opening-text" style="text-align: center;"> About Me </h1>
         </header>
        
         <main>
-            <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"><i>Demonstrations of my Skillset in the Real World</i></h1></div>
+            <div class="silver-sub" style="height: 50vh; background-color: silver;">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="background-color:rgb(56, 56, 56) ;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" >
+                        <img src="Images/Grad.JPG" class="d-block" style="height: 40vh;" alt="picture of high school graduation">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Graduation</h5>
+                          <p class="caption">High school graduation from the Academy of Math, Science and Engineering</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/20.JPG" class="d-block" style="height: 40vh; " alt="Top 20 Ceremony Image">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p><b>Top 20 in Class of 2021</b></p>
+                          <p class="caption">Ceremony for top 20 ranked students within Morris Hills, Morris Knolls, and Academy of MSE</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/UIUC.jpeg" class="d-block" style="height: 40vh; " alt="DJ in front of UIUC Quad">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Computer Engineering UIUC</h5>
+                          <p class="caption">Accepted into one of top 5 Computer Engineering/Science program in America.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/head.jpeg" class="d-block" style="height: 40vh" alt="DJ Bautista Headshot">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 >DJ Bautista</h5>
+                          <p class="caption">A natural-born innovator interested in computer systems.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
 
             <div class="project-tab">
                 <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -152,63 +209,10 @@
             
             <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
 
-            <div class="project-tab" style="padding-bottom: 2%;" id="E4ETeaching">
-                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="images/E4E.png" alt="Image of Education4Equity Logo">
-                <div class="project-description">
-                    <h1 style="text-align: left; line-height: 200%;">Computer Science Principles Teacher,<br> Education4Equity
-                       </h1>
-                    <p style="text-align: start; line-height: 165%;">Led weekly, virtual instruction of a class of 14 students in Code.org coursework under the Dharmothana religious and charitable organization, a 501(c)3 non-profit. Started class with interactive demonstration of new concepts alongside corresponding 
-                        java representations in order to foster healthy curiosity. Maintained google classroom and created stimulating supplementary materials. Response was resoundingly positive and engaged according to program organizer. Attatched are examples of teaching tools:
-                    </p>
-                </div>
-            </div>
-
-            <div class="slideshow-array">
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRbNT9h5eTRz5dycAGCoj0i_Xd8nzOmsr1nmRqK0Emt74W1O9mn3RhbyTP5iBpz6VC_eEa5iYgfOLas/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 1-3 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">                
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRTuV89DOrVnDDfkST21TqTm6AeNNGqIKqckv-3WADjJXcce_qj4YGaXyWCiZIgFdKhkPW6WWU7shH4/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 4-6 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vR7jGetqsxFZyL2vuO_JlxAE7ODe8WmvH7f8qLAdWtghDjC4JJYDdwQxvQ9w7LqzwO4whcSQDxDDgp7/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 11-13 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSX0iWo-1l0r7ERuMKQC0e_lCNQqAIf6v45WZfHPYMrT52wmc34gK62TQiGXGT6gQLcxvE1Ou5P8q0P/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 14-15 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSw-km19ztBVDydzTl3JkSmot9ScP6gzizjFymGH3JsPoJh_9pBROE4dSsvu6xWK77nhT0PbVPBPIek/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 16-17 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="images/Kahoot.png" alt="Image of Kahoot.it Game"><br>
-                    <a href="https://create.kahoot.it/share/lessons-1-and-2/45a1f71a-e4d5-41e9-bf6d-d1712d6a00dc" target="_blank"><p>Kahoot Review Game</p></a>
-                </div>
-                <div style="padding: 1%;">
-                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="images/Classroom.png" alt="Image of Coding Google Classroom"><br>
-                    <a href="https://quizlet.com/_9jmwq7?x=1jqt&i=3b2zd0" target="_blank"><p>Google Classroom Quizlet</p></a>
-                </div>
-            
-            </div>
-
             <div class="silver-sub" style="height: 2px; background-color: rgb(228, 220, 220);;">
                 <div style="background-color: silver; width: 75%">.</div>
             </div>
 
-            <div class="project-tab">
-                <img style="width: 20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="images/UIUCLogo.jpeg" alt="Image of UIUC Logo">
-                <div class="project-description">
-                    <h1 style="text-align: left; line-height: 200%;">Current Progress
-                       </h1>
-                    <p style="text-align: start; line-height: 165%;">Today, I'm sharpening my computer knowledge and design expertise through RSO participation here at the University of Illinois. As a member of both the I-robotics Combat Robotics Freshman team (Parts against Humanity) and the embedded systems subgroup of the Software Team of Illini EV Concept,
-                         I regularly demonstrate my engineering skillset in tangible, engaging means. I'm also the Secretary of the newly-founded Fencing Illini club, where I'll have to manage team members through this leadership position. I'm always looking for new ways to get involved so don't hesitate to contact me!
-                    </p>
-                </div>
-            </div>
 
         </main>
 
