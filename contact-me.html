@@ -65,6 +65,14 @@
                 font-size: 2em;
                 font-family: 'Playfair Display', serif;
             }
+            h2{
+                font-size: 12px;
+                font-family: 'Lato', serif;
+                color:silver;
+                line-height: 250%;
+                text-align: center;
+                font-style:italic ;
+            }
             h3{
                 color:black;
                 font-size: 3.5vh;
@@ -120,6 +128,7 @@
             }
         </style>
 
+        <script src="contact.js"></script>
     </head>    
 
     <body style="background-color:whitesmoke";>
@@ -149,10 +158,46 @@
         </header>
        
         <main>
-            <div class="silver-sub" style="height: 45vh; background-color: silver;">
-            </div>
+            <div style="height: 10vh; background-color: silver;"></div>
 
+            <div class="project-tab" style=" align-items: flex-start; padding: 3vw;">
+                
+                <div style="display: flex; justify-content: space-between; width: 60vw; gap: 4vw;">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">First Name</span>
+                        <input type="text" class="form-control" placeholder="Dylan" aria-label="First " aria-describedby="basic-addon1">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Last Name</span>
+                        <input type="text" class="form-control" placeholder="Bautista" aria-label="Last" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+    
+                <div class="mb-3" style="width: 60vw;">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3" style="width: 60vw;">
+                    <label for="exampleFormControlInput1" class="form-label">Business/Company</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Stark Industries">
+                </div>
+
+                <div class="mb-3" style="width: 60vw;">
+                    <label for="exampleFormControlTextarea1" class="form-label">How can I help you?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hello! I would like to contact you for an exciting new partnership opportunity at..."></textarea >
+                </div>
+
+                <div class="mb-3 form-check" style="width: 60vw;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I'm ready!</label>
+                </div>
+                  
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
             
+
         </main>
 
         <div style="height: 10vh; background-color: silver;"></div>
@@ -163,6 +208,9 @@
                 LinkedIn profile: <a href="https://www.linkedin.com/in/dylan-bautista-a924a1210/" target="_blank">https://www.linkedin.com/in/dylan-bautista-a924a1210 </a><br>
                 Find me on Handshake as <u>Dylan Bautista</u>
             </p>
+            <h2>
+                Website Constructed by DJ Bautista using HTML, CSS, JavaScript, <small>w/bootstrap</small>
+            </h2>
         </footer>
 
         <!--bootstrap stuff-->
