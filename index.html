@@ -98,6 +98,12 @@
                 display: flex;
                 justify-content: space-between;
             }
+            .selectedwork{
+                display: flex; 
+                flex-direction: row; 
+                justify-content: center; 
+                align-items:flex-start;
+            }
         </style>
 
     </head>    
@@ -141,15 +147,25 @@
             </div>
 
             <div style="background-color: white; margin-bottom: 0px; display: flex;justify-content: center;flex-direction: column; align-items: center;">
-                <h3 style="font-size: 2em; padding: 20px;"><b>Selected work</b></h3>
-                <div style="display: flex; flex-direction: row; justify-content: center; align-items:flex-start;">
-                    <div style="padding:35px; margin-right: 70px">
+                <h3 style="font-size: 2em; padding: 10px; margin-top: 15px; border: 4px; border-style:solid; border-color:black;"><b>Selected work</b></h3>
+                <div class="selectedwork">
+                    <div style="padding:25px; margin-right: 70px">
                         <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         <h3 style="color:dimgray; text-align: center;">Computer Science Internship <br>at Picatinny Arsenal</h3>
                         <p style="padding: 2%;">2020-2021</p>
                         <div class="d-grid gap-2"><a class="btn btn-dark" role="button" href="project-page.html">Click Here to Learn More</a></div>
                     </div>
-                    <div style="padding:35px; margin-left: 70px">
+                    <div style="padding:25px; margin-left: 70px">
+                        <img class="post-image" src="Images/CWHQ.png" alt="Image of codewizardsHQ logo">
+                        <h3 style="color:dimgray; text-align: center;">Programming Instruction for <br> CodeWizardsHQ</h3>
+                        <p style="padding: 2%;">2022-Current</p>
+                        <div class="d-grid gap-2"><a class="btn btn-dark" role="button" href="project-page.html#CWHQTeaching">Click Here to Learn More</a></div>
+                    </div>
+                </div>
+                <div class="silver-sub" style="height: 8vh; width: 100vw;"></div>
+                <h3 style="font-size: 2em; padding: 10px; margin-top: 15px; border: 4px; border-style:solid; border-color:black;"><b>Volunteer Experience</b></h3>
+                <div class="selectedwork">
+                    <div style="padding:25px;">
                         <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Ed4Equity.png" alt="Image of Education4Equity teaching chart">
                         <h3 style="color:dimgray; text-align: center;">Programming Instruction for <br> Education4Equity</h3>
                         <p style="padding: 2%;">2020-2021</p>
