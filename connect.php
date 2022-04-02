@@ -6,5 +6,6 @@
     $phone = $_POST['phone'];
     $textarea1 = $_POST['textarea1'];
 
-
+    //Database Connection
+    
 ?>
