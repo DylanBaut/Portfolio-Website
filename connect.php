@@ -11,7 +11,7 @@
     if($conn->connect_error){
         die('Oops, Connection Failed : ' .$conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into registration(First, Last, email, business, phone, textarea1) values(?,?,?,?,?,?)" );
+        $stmt = $conn->prepare("insert into Information_Form(First, Last, email, business, phone, textarea1) values(?,?,?,?,?,?)" );
         $stmt -> bind_param("ssssis", $First, $Last, $email, $business, $phone, $textarea1);
         $stmt -> execute();
         echo "Thanks for providing information, submitted successfully!";
