@@ -7,7 +7,7 @@
     <head>
     
         <meta charset= "UTF-8" >
-        <meta name="description" content="DJ's Project Page">
+        <meta name="description" content="DJ's Work Experience">
         <meta name="author" content="Dylan Jude Bautista">
         <meta name="keywords" content= "Dylan, Bautista, Portfolio, DJ">
         <meta name="newport" content="width=device width, initial scale=1.0">
@@ -103,7 +103,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
                 height: 20vh;
+                padding-top: 3vh;
             }
             .project-description{
                 width: 45vw;
@@ -132,6 +134,9 @@
                 display: flex;
                 justify-content: space-between;
             }
+            #RSSI{
+                gap: 5vw;
+            }
         </style>
 
     </head>    
@@ -150,6 +155,7 @@
                   <li><a class="dropdown-item" href="index.html">Home</a></li>
                   <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
                   <li><a class="dropdown-item" href="project-page.html">Project Page</a></li>
+                  <li><a class="dropdown-item" href="work-page.html">Work Experience</a></li>
                   <li><a class="dropdown-item" href="contact-me.html">Contact Me</a></li>
                 </ul>
               </div>
@@ -159,93 +165,81 @@
         <div style="height: 3vh; background-color:rgb(56, 56, 56);"></div>
 
         <header style=" display:flex; align-items:center; justify-content: center; height: 22vh; background-color: rgb(56, 56, 56);">
-            <h1 class="opening-text" style="text-align: center;"> Work Experience </h1>
+            <h1 class="opening-text" style="text-align: center;"> Projects </h1>
         </header>
        
         <main>
-            <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"><i>Demonstrations of my Skillset in the Real World</i></h1></div>
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"><i>Demonstrations of my Skillset in Real Applications</i></h1></div>
 
             <div class="project-tab">
-                <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Radar_presentation.jpg" alt="radar presentation image">
                 <div class="project-description">
-                    <h1 style="text-align: left; line-height: 200%;">Intern at Picatinny Arsenal,<br>
-                        US Army CCDC</h1>
-                    <p style="text-align: start; line-height: 165%;">Integrated sensor data with Bluetooth interface using Python programming, alongside a colleague and mentor Mr. Gregory Hader. Provided weekly status updates and collaborated with Precision Armaments and Intelligent Sensors Division. Multifocused on a variety of possible applications such as sleep study, 
-                        flex sensor development, and personal projects. Encompassed concepts such as hardware expertise, microcontroller programming, and industry networking. For more information feel free to consult the presentation to the left.
+                    <h1 style="text-align: left; line-height: 200%;">Radar Respiratory Monitoring,<br>
+                        CS 437: Topics in Internet of Things</h1>
+                    <p style="text-align: start; line-height: 165%;">  Created wireless breathing rate monitoring system using raw ADC data from Radar. Used Doppler-range profile to extract
+                        phase information from single phase bin and graphically display torso micromovements related to breathing. Displayed inhale/exhales on RaspberryPi LED, and send UDP message if halt in breathing occurs.
+                        <br>                        <br>
+                        For our Midterm, we found hidden spy camera's by packet sniffing over wifi to capture the RSSI values of an emitting motion-detecting camera. Using these
+                        signal strength values, we mapped out competition area in a 2D space using joystick input, IMU, and step detection. After graphical analyis, estimations are made to
+                        where the spy camera most likely is.
                     </p>
                 </div>
             </div>
+            <div class="project-tab" id="RSSI">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/localization.jpg" alt="Radar Poster">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Radar_poster.png" alt="Radar Poster">
+            </div>
 
+
+            <div class="silver-sub" style="height: 3vh; background-color: silver;"></div>
             <div class="project-tab" id ='github'>
-                <div class="project-description">
-                    <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
                     <h1 style="text-align: left; line-height: 200%;">Check out my Github
                     </h1>
                     <p style="text-align: start; line-height: 165%;"> 
                         See what projects I'm currently working on:<br>
                         https://github.com/dylanbaut
                     </p>
-                </div>
             </div>
 
             
             <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
             <div class="project-tab" style="padding-bottom: 2%;" id="CWHQTeaching">
-                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/logo.png" alt="Image of Education4Equity Logo">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/tetris.jpg" alt="Image of Education4Equity Logo">
                 <div class="project-description">
-                    <h1 style="text-align: left; line-height: 200%;">Online Coding Instructor,<br> CodeWizardsHQ
+                    <h1 style="text-align: left; line-height: 200%;">Tetris FPGA Implementation <br> ECE 385: Digital Systems Laboratory
                        </h1>
-                    <p style="text-align: start; line-height: 165%;"> Directing course activities of multiple high-school and middle-school classes per week, delivering Python, Javascript, Scratch, and HTML/CSS-based curriculum to over 28 students.
-                    Will be empowering students to independently succeed at coding challenges in online platform by facilitating a friendly student community and clarifying broad programming concepts. Additionally, will provide feedback to teaching staff and lead instructors as well as
-                    communicate with parents as necessary. 
+                    <p style="text-align: start; line-height: 165%;"> Replicated the classic NES game of Tetris through our SOC design and software code. Used a USB keyboard as input and a VGA display as output, we implemented
+                        all the basic functions of stacking blocks, clearing rows, score counting, and game ending. A NIOS II CPU is used alongside a RAM component for on-chip storage,
+                        with most of the screen logic being written in C software with VGA controls based in the AVL interface module.
+                        
                     </p>
                 </div>
             </div>
+
+            <div class="project-tab">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/start_out.png" alt="Image of Education4Equity Logo">
+                <video width="640" height="360" controls>
+                    <source src="Images/tetris.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+
+
 
             <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
 
             <div class="project-tab" style="padding-bottom: 2%;" id="E4ETeaching">
-                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/E4E.png" alt="Image of Education4Equity Logo">
-                <div class="project-description">
-                    <h1 style="text-align: left; line-height: 200%;">Computer Science Principles Teacher,<br> Education4Equity
+                <embed class="post-image" src="PDF's/445_final.pdf" type="application/pdf">
+                    <div class="project-description">
+                    <h1 style="text-align: left; line-height: 200%;">FLying Object Tracking Program<br> CS 445: Computational Photography
                        </h1>
-                    <p style="text-align: start; line-height: 165%;">Led weekly, virtual instruction of a class of 14 students in Code.org coursework under the Dharmothana religious and charitable organization, a 501(c)3 non-profit. Started class with interactive demonstration of new concepts alongside corresponding 
-                        java representations in order to foster healthy curiosity. Maintained google classroom and created stimulating supplementary materials. Response was resoundingly positive and engaged according to program organizer. Attatched are examples of teaching tools:
+                    <p style="text-align: start; line-height: 165%;">Given a tracking shot of flying object in motion, return a trajectory of object overlayed over stabilized background. Used MATLAB to train darknet
+                        Object detection network on flying objects such as helicopters, airplanes, etc. Converted video to homographic overlay of key frames to map out panoramic background, and 
+                        use detector to trace trajectory over image.
                     </p>
                 </div>
             </div>
 
-            <div class="slideshow-array">
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRbNT9h5eTRz5dycAGCoj0i_Xd8nzOmsr1nmRqK0Emt74W1O9mn3RhbyTP5iBpz6VC_eEa5iYgfOLas/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 1-3 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">                
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRTuV89DOrVnDDfkST21TqTm6AeNNGqIKqckv-3WADjJXcce_qj4YGaXyWCiZIgFdKhkPW6WWU7shH4/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 4-6 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vR7jGetqsxFZyL2vuO_JlxAE7ODe8WmvH7f8qLAdWtghDjC4JJYDdwQxvQ9w7LqzwO4whcSQDxDDgp7/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 11-13 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSX0iWo-1l0r7ERuMKQC0e_lCNQqAIf6v45WZfHPYMrT52wmc34gK62TQiGXGT6gQLcxvE1Ou5P8q0P/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 14-15 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSw-km19ztBVDydzTl3JkSmot9ScP6gzizjFymGH3JsPoJh_9pBROE4dSsvu6xWK77nhT0PbVPBPIek/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    <p>Lesson 16-17 Slideshow</p>
-                </div>
-                <div style="padding: 1%;">
-                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Kahoot.png" alt="Image of Kahoot.it Game"><br>
-                    <a href="https://create.kahoot.it/share/lessons-1-and-2/45a1f71a-e4d5-41e9-bf6d-d1712d6a00dc" target="_blank"><p>Kahoot Review Game</p></a>
-                </div>
-                <div style="padding: 1%;">
-                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Classroom.png" alt="Image of Coding Google Classroom"><br>
-                    <a href="https://quizlet.com/_9jmwq7?x=1jqt&i=3b2zd0" target="_blank"><p>Google Classroom Quizlet</p></a>
-                </div>
-            
-            </div>
 
             <div class="silver-sub" style="height: 2px; background-color: rgb(228, 220, 220);;">
                 <div style="background-color: silver; width: 75%">.</div>

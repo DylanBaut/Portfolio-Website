@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--
+    This is the first test html website while DJ is starting to learn HTML
+-->
+<html>
+
+    <head>
+    
+        <meta charset= "UTF-8" >
+        <meta name="description" content="DJ's Work Experience">
+        <meta name="author" content="Dylan Jude Bautista">
+        <meta name="keywords" content= "Dylan, Bautista, Portfolio, DJ">
+        <meta name="newport" content="width=device width, initial scale=1.0">
+        <title>DJ Bautista</title>
+        <!--bootstrap stuff-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Playfair Display font Import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        
+        <!--Lato font Import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan:wght@100&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+        <!--
+            <script src="script.js"></script>
+        -->
+        <style>
+            .opening-text{
+                color:rgb(188, 192, 196);
+                font-size: 2.8em;
+                font-family: 'Playfair Display', serif;
+                width: 40vw;
+                line-height: 140%;
+                text-shadow: 3px 3px 4px rgb(150, 137, 137);
+                padding: 1%;
+                border: 6px;
+                border-style:solid;
+                border-color:rgb(188, 192, 196);
+            }
+            p{
+                font-size: 18px;
+                font-family: 'Lato', serif;
+                color:rgb(30, 33, 37);
+                line-height: 250%;
+                text-align: center;
+            }
+            .header-image{
+                width:380px;
+                border-style: groove;
+                border-color: azure;
+                border-width: 5px;
+                border-radius: 5px;
+            }
+            .post-image{
+                width: 30vw;
+                height: 40vh;
+                border-style: ridge;
+            }
+            h1{
+                color: black;
+                font-size: 2em;
+                font-family: 'Playfair Display', serif;
+            }
+            h2{
+                font-size: 12px;
+                font-family: 'Lato', serif;
+                color:silver;
+                line-height: 250%;
+                text-align: center;
+                font-style:italic ;
+            }
+            h3{
+                color:black;
+                font-size: 3.5vh;
+                font-family: 'Playfair Display', serif;
+            }
+            .silver-sub{
+                background-color:rgb(228, 220, 220);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            footer{
+                background-color: white;
+                font-family: 'Playfair Display', serif;
+                line-height: 125%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .project-tab{
+                background-color: rgb(228, 220, 220);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50vh;
+            }
+            #github{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 20vh;
+                padding-top: 3vh;
+            }
+            .project-description{
+                width: 45vw;
+                height: 40vh;
+                margin-left: 60px;
+            }
+            .slideshow-array{
+                background-color: rgb(228, 220, 220);
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+            .slideshow{
+                width: 20vw;
+                height: 30vh;
+            }
+            .topbar{
+                box-shadow: 0px 20px 35px rgba(0,0,0,.5);
+                padding: 4px; 
+                position:fixed; 
+                top:0px; 
+                left: 0px; 
+                width:100%; 
+                background-color: white; 
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+
+    </head>    
+
+    <body style="background-color:whitesmoke";>
+        <!--Topbar-->
+        <div class="topbar">
+            <h3>
+                  Dylan Jude Bautista
+            </h3>
+            <div class="dropdown" style="padding-right: 30px">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" style="width:25vw ;" data-bs-toggle="dropdown" aria-expanded="false">
+                  Navigation
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+                  <li><a class="dropdown-item" href="project-page.html">Project Page</a></li>
+                  <li><a class="dropdown-item" href="work-page.html">Work Experience</a></li>
+                  <li><a class="dropdown-item" href="contact-me.html">Contact Me</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <!--separator-->
+        <div style="height: 3vh; background-color:rgb(56, 56, 56);"></div>
+
+        <header style=" display:flex; align-items:center; justify-content: center; height: 22vh; background-color: rgb(56, 56, 56);">
+            <h1 class="opening-text" style="text-align: center;"> Work Experience </h1>
+        </header>
+       
+        <main>
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"><i>Demonstrations of my Skillset in the Real World</i></h1></div>
+
+            <div class="project-tab">
+                <iframe class="post-image" src="https://docs.google.com/presentation/d/e/2PACX-1vRVKDXWKGZkXx8PhIXIV6wPqDohctsmNESKwkLZkvyVkT-cOgtGUxobowZgx_yb5q2XaMQXSqmVDyQo/embed?start=false&loop=false&delayms=30000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="project-description">
+                    <h1 style="text-align: left; line-height: 200%;">Intern at Picatinny Arsenal,<br>
+                        US Army CCDC</h1>
+                    <p style="text-align: start; line-height: 165%;">Integrated sensor data with Bluetooth interface using Python programming, alongside a colleague and mentor Mr. Gregory Hader. Provided weekly status updates and collaborated with Precision Armaments and Intelligent Sensors Division. Multifocused on a variety of possible applications such as sleep study, 
+                        flex sensor development, and personal projects. Encompassed concepts such as hardware expertise, microcontroller programming, and industry networking. For more information feel free to consult the presentation to the left.
+                    </p>
+                </div>
+            </div>
+
+            <div class="silver-sub" style="height: 3vh; background-color: silver;"></div>
+            <div class="project-tab" id ='github'>
+                    <h1 style="text-align: left; line-height: 200%;">Check out my Github
+                    </h1>
+                    <p style="text-align: start; line-height: 165%;"> 
+                        See what projects I'm currently working on:<br>
+                        https://github.com/dylanbaut
+                    </p>
+            </div>
+
+            
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
+            <div class="project-tab" style="padding-bottom: 2%;" id="CWHQTeaching">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/logo.png" alt="Image of Education4Equity Logo">
+                <div class="project-description">
+                    <h1 style="text-align: left; line-height: 200%;">Online Coding Instructor,<br> CodeWizardsHQ
+                       </h1>
+                    <p style="text-align: start; line-height: 165%;"> Directing course activities of multiple high-school and middle-school classes per week, delivering Python, Javascript, Scratch, and HTML/CSS-based curriculum to over 28 students.
+                    Will be empowering students to independently succeed at coding challenges in online platform by facilitating a friendly student community and clarifying broad programming concepts. Additionally, will provide feedback to teaching staff and lead instructors as well as
+                    communicate with parents as necessary. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="silver-sub" style="height: 10vh; background-color: silver;"></div>
+
+            <div class="project-tab" style="padding-bottom: 2%;" id="E4ETeaching">
+                <img class="post-image" style="border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/E4E.png" alt="Image of Education4Equity Logo">
+                <div class="project-description">
+                    <h1 style="text-align: left; line-height: 200%;">Computer Science Principles Teacher,<br> Education4Equity
+                       </h1>
+                    <p style="text-align: start; line-height: 165%;">Led weekly, virtual instruction of a class of 14 students in Code.org coursework under the Dharmothana religious and charitable organization, a 501(c)3 non-profit. Started class with interactive demonstration of new concepts alongside corresponding 
+                        java representations in order to foster healthy curiosity. Maintained google classroom and created stimulating supplementary materials. Response was resoundingly positive and engaged according to program organizer. Attatched are examples of teaching tools:
+                    </p>
+                </div>
+            </div>
+
+            <div class="slideshow-array">
+                <div style="padding: 1%;">
+                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRbNT9h5eTRz5dycAGCoj0i_Xd8nzOmsr1nmRqK0Emt74W1O9mn3RhbyTP5iBpz6VC_eEa5iYgfOLas/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p>Lesson 1-3 Slideshow</p>
+                </div>
+                <div style="padding: 1%;">                
+                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vRTuV89DOrVnDDfkST21TqTm6AeNNGqIKqckv-3WADjJXcce_qj4YGaXyWCiZIgFdKhkPW6WWU7shH4/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p>Lesson 4-6 Slideshow</p>
+                </div>
+                <div style="padding: 1%;">
+                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vR7jGetqsxFZyL2vuO_JlxAE7ODe8WmvH7f8qLAdWtghDjC4JJYDdwQxvQ9w7LqzwO4whcSQDxDDgp7/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p>Lesson 11-13 Slideshow</p>
+                </div>
+                <div style="padding: 1%;">
+                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSX0iWo-1l0r7ERuMKQC0e_lCNQqAIf6v45WZfHPYMrT52wmc34gK62TQiGXGT6gQLcxvE1Ou5P8q0P/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p>Lesson 14-15 Slideshow</p>
+                </div>
+                <div style="padding: 1%;">
+                    <iframe class="slideshow" src="https://docs.google.com/presentation/d/e/2PACX-1vSw-km19ztBVDydzTl3JkSmot9ScP6gzizjFymGH3JsPoJh_9pBROE4dSsvu6xWK77nhT0PbVPBPIek/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <p>Lesson 16-17 Slideshow</p>
+                </div>
+                <div style="padding: 1%;">
+                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Kahoot.png" alt="Image of Kahoot.it Game"><br>
+                    <a href="https://create.kahoot.it/share/lessons-1-and-2/45a1f71a-e4d5-41e9-bf6d-d1712d6a00dc" target="_blank"><p>Kahoot Review Game</p></a>
+                </div>
+                <div style="padding: 1%;">
+                    <img style="width:20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/Classroom.png" alt="Image of Coding Google Classroom"><br>
+                    <a href="https://quizlet.com/_9jmwq7?x=1jqt&i=3b2zd0" target="_blank"><p>Google Classroom Quizlet</p></a>
+                </div>
+            
+            </div>
+
+            <div class="silver-sub" style="height: 2px; background-color: rgb(228, 220, 220);;">
+                <div style="background-color: silver; width: 75%">.</div>
+            </div>
+
+            <div class="project-tab">
+                <img style="width: 20vw; border-color:aliceblue; border-width: 3px;border-radius: 3px" src="Images/UIUCLogo.jpeg" alt="Image of UIUC Logo">
+                <div class="project-description">
+                    <h1 style="text-align: left; line-height: 200%;">Current Progress
+                       </h1>
+                    <p style="text-align: start; line-height: 165%;">Today, I'm sharpening my computer knowledge and design expertise through industry-related coursework and RSO participation here at the University of Illinois. Currently, I'm taking a Matlab infused control Systems class, a Rasp-Pi wireless IoT class, Computational Photography, and Algorithms Class, I regularly demonstrate my engineering skillset in tangible, engaging means through participation in Illinois Robotics in Space and as a CA. As a former member of both the I-robotics Combat Robotics Freshman team (Parts against Humanity) and the embedded systems subgroup of Illini EV Concept,
+                         I gained valuable electrical/software experience. I'm also the Secretary of the newly-founded Fencing Illini club, where I'll have to manage team members through this leadership position. I'm always looking for new ways to get involved, and am actively searching for spring/summer opportunities so don't hesitate to contact me!
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <div class="silver-sub" style="height: 10vh; background-color: silver;"><h1 style="font-size: 2.5vh;"></h1></div>
+
+        <footer>
+            <p style="flex-grow: 1; font-size: 20; font-family: 'Playfair Display', serif;">
+                Get in touch at <u>dylanjudebautista@icloud.com</u><br>
+                LinkedIn profile: <a href="https://www.linkedin.com/in/dylan-bautista-a924a1210/" target="_blank">https://www.linkedin.com/in/dylan-bautista-a924a1210 </a><br>
+                Find me on Handshake as <u>Dylan Bautista</u>
+            </p>
+            <h2>
+                Website Constructed by DJ Bautista using HTML, CSS, JavaScript, <small>w/bootstrap</small>
+            </h2>
+        </footer>
+
+        <!--bootstrap stuff-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
